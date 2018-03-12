@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+var formReducer = require('redux-form').reducer;
 
 const rootReducer = combineReducers({
-  //here you to write  like reducerstatename:reducervalue
+    form: formReducer
 });
 
 export default rootReducer;

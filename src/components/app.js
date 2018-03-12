@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-class App extends Component {
+import BillPage from './BillPage/billPage.js'
+ class App extends Component {
   render() {
+  	console.log(this.props)
     return (
-      <div>React simple starter</div>
+      <div>
+      <BillPage/>
+      </div>
     );
   }
 }
 function mapStateToProps(state){
-return 
+return {}
 }
-export default connect(mapStateToProps)
+export default connect(mapStateToProps,{})(App)
